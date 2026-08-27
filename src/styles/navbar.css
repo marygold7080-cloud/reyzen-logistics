@@ -73,7 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 160px;
+  height: 105px;
 }
 
 /* Brand Logo */
@@ -85,18 +85,18 @@
 }
 
 .brand-logo-img {
-  height: 150px;
+  height: 95px;
   width: auto;
-  max-width: 380px;
+  max-width: 280px;
   object-fit: contain;
   display: block;
   transition: transform 0.2s ease, filter 0.2s ease;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.22));
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.18));
 }
 
 .brand-logo:hover .brand-logo-img {
   transform: scale(1.03);
-  filter: drop-shadow(0 6px 18px rgba(220, 38, 38, 0.4));
+  filter: drop-shadow(0 5px 16px rgba(220, 38, 38, 0.35));
 }
 
 .logo-icon-card {
@@ -458,6 +458,9 @@
   }
   .navbar-container {
     height: 72px;
+  }
+  .brand-logo-img {
+    height: 60px;
   }
   .logo-icon-card {
     width: 38px;

@@ -35,12 +35,12 @@
 }
 
 .footer-logo-img {
-  height: 150px;
+  height: 100px;
   width: auto;
-  max-width: 380px;
+  max-width: 280px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.4));
   transition: transform 0.2s ease;
 }
 
