@@ -6,11 +6,15 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Route all non-file requests to index.html (SPA routing for Hostinger)
+  # Never rewrite assets and static files
+  RewriteCond %{REQUEST_URI} ^/assets/ [NC,OR]
+  RewriteCond %{REQUEST_URI} \.(js|css|png|jpg|jpeg|gif|webp|svg|mp4|ico|woff|woff2|ttf|eot|xml|txt|json)$ [NC]
+  RewriteRule ^ - [L]
+
+  # Route all other page requests to index.html (SPA routing for Hostinger)
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
 
