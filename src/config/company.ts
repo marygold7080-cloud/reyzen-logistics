@@ -53,15 +53,15 @@ export const COMPANY_INFO: CompanyConfig = {
   domain: "reyzenlogistics.com",
   websiteUrl: "https://reyzenlogistics.com",
   phone: {
-    display: "(551) 363-5767",
-    raw: "+15513635767",
-    dispatchDisplay: "(551) 363-5767",
-    dispatchRaw: "+15513635767",
+    display: "(818) 278-1789",
+    raw: "+18182781789",
+    dispatchDisplay: "(818) 278-1789",
+    dispatchRaw: "+18182781789",
   },
   email: {
-    general: "info@agilityglobal.co",
-    quotes: "info@agilityglobal.co",
-    support: "info@agilityglobal.co",
+    general: "info@reyzenlogistics.com",
+    quotes: "info@reyzenlogistics.com",
+    support: "info@reyzenlogistics.com",
   },
   address: {
     street: "100 Logistics Blvd, Suite 300",
